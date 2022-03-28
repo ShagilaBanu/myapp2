@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import {Component} from 'react';
+import Greet from './GreetFunction';
+import GreetProp from './GreetFunctionProp';
+import GreetClass from './GreetClass';
+import ClassProp from './ClassProp';
+import ArrowFunction from './ArrowFunction';
+import Statesample from './Statesample';
+import Counter from './Counter';
+
+class App extends Component{
+  
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <div className="App"> 
+<Greet/>
+<GreetProp name="Shagila"/>
+<GreetProp name="Shagila" lastName="Banu"/>
+<GreetClass/>
+<ClassProp name="Shagila" lastName="Banu"/>
+<ArrowFunction/>
+<Statesample></Statesample>
+<Counter></Counter>
+          </div>
   );
+}
 }
 
 export default App;
