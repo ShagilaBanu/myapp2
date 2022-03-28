@@ -18,9 +18,10 @@ class Statesample extends Component
 
     render()
     {
+        const {message, name} = this.state;
         return(
             <div>
-                <h1> {this.state.message} {this.state.name}</h1>
+                <h1> {message} {name}</h1>
                 <button onClick={()=>this.changeName()}>Click</button>
             </div>
         )

@@ -8,6 +8,7 @@ import ClassProp from './ClassProp';
 import ArrowFunction from './ArrowFunction';
 import Statesample from './Statesample';
 import Counter from './Counter';
+import Parent from './Parent';
 
 class App extends Component{
   
@@ -22,6 +23,7 @@ class App extends Component{
 <ArrowFunction/>
 <Statesample></Statesample>
 <Counter></Counter>
+<Parent/>
           </div>
   );
 }
